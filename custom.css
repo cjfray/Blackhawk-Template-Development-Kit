@@ -1,0 +1,92 @@
+/**
+ * Custom Styles
+ *
+ * This file contains styles and overrides to the base stylesheet that are
+ * necessary to achieve design goals of custom templates. You may add to this
+ * file and change it at will.
+ */
+
+/* Standard Template Styles */
+.header {
+  text-align: center;
+  color: #fff;
+  background: rgb(103, 130, 167);
+  border-bottom: 2px solid rgb(255, 140, 0);
+  padding: 1em;
+}
+
+.header h1 {
+  color: #fff;
+  display: inline-block;
+}
+
+.header .button {
+  background-color: transparent;
+  border-color: #fff;
+  margin: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .header .button {
+    margin-top: 1rem;
+  }
+}
+
+.header .button:hover {
+  color: rgb(103, 130, 167);
+  background: #fff;
+}
+
+.content {
+  padding: 2em 0;
+}
+
+#value {
+  display: inline-block;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-art {
+  text-align: center;
+}
+
+.card-art img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-details {
+  overflow: hidden;
+  border-radius: 1em;
+  padding: 1em;
+  background: #efefef;
+}
+
+.subheader {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#barcode {
+  text-align: center;
+}
+
+#barcode > img {
+  width: 100%;
+  max-width: 350px;
+
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.footer {
+  border-top: 1px solid #efefef;
+  padding-top: 2em;
+}

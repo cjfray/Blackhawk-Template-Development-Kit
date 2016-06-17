@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:bhn="#" xml:lang="en" lang="en">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Standard eGift!</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <script type="text/javascript" src="scripts/vendor/jquery.min.js"></script>
+  </head>
+	<body>
+		<div class="header">
+      <div class="row">
+        <div class="columns small-12 medium-8 medium-push-2">
+          <h1>
+            Your
+            <bhn:data name="productLine.retailerName">ACME BRANDED</bhn:data>
+            eGift
+          </h1>
+        </div>
+        <div class="columns small-6 medium-2 medium-pull-8 medium-text-left">
+          <a class="button menu hide-on-print" href="#" data-toggle="sidebar" role="button">
+            Save
+          </a>
+        </div>
+        <div class="columns small-6 medium-2 medium-text-right">
+          <a class="button print hide-on-print" href="javascript:window.print();" role="button">
+            Print
+          </a>
+        </div>
+      </div>
+		</div>
+    <div class="content">
+      <div class="row">
+        <div class="columns medium-6">
+          <div class="card-art space-below-2">
+            <bhn:card-image>
+              <img src="http://placehold.it/310x200" alt="gift card" />
+            </bhn:card-image>
+          </div>
+          <div id="barcode" class="space-below-2">
+            <bhn:barcode width="500" height="100">
+              <img src="http://placehold.it/300x100" alt="barcode" />
+            </bhn:barcode>
+          </div>
+          <div class="card-details space-below-2">
+            <h6 class="subheader">Card Information</h6>
+              <div class="columns medium-6 medium-pull-6">
+              <strong>Card #:</strong>
+              <span>
+                <bhn:data name="account.accountNumber">1234567891234</bhn:data>
+              </span>
+		<strong>Pin #:</strong>
+              <span>
+                <bhn:data name="account.securityCode">1234</bhn:data>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="columns medium-6">
+          <div class="card-info row space-below-4">
+            <div class="columns small-12 space-below-2">
+              <h6 class="subheader">Value</h6>
+              <span id="value">
+                <bhn:balance>$500</bhn:balance>
+              </span>
+            </div>
+            <div class="columns small-6 space-below-2">
+              <h6 class="subheader">From</h6>
+              <span>
+                <bhn:data name="eGift.from">Some Guy</bhn:data>
+              </span>
+            </div>
+            <div class="columns small-6 space-below-2">
+              <h6 class="subheader">To</h6>
+              <span>
+                <bhn:data name="eGift.to">Other Guy</bhn:data>
+              </span>
+            </div>
+            <div class="columns small-12 space-below-2">
+              <h6 class="subheader">Message</h6>
+              <p>
+                <bhn:data name="eGift.message">
+                  Cras quis nunc purus. Fusce vitae dui ut justo posuere luctus nec fringilla mauris. Morbi mi leo, finibus a ultricies sed, condimentum sit amet diam. Nullam et nisl non justo sagittis ornare. Aenean velit enim, feugiat sit amet pharetra vel, fermentum nec turpis. In convallis orci ante, at tempor magna elementum a.
+                </bhn:data>
+              </p>
+            </div>
+            <div class="columns small-12">
+              <h6 class="subheader">About Your eGift</h6>
+              <p>
+                <bhn:data name="product.description">
+                  This is a pretty sweet eGift template that provides all kinds of advantages and such.
+                </bhn:data>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="footer">
+      <div class="row">
+        <div class="columns small-12 space-below-2">
+          <h6 class="subheader">Redemption Info</h6>
+          <p>
+            <bhn:data name="product.redemptionInfo">
+              If you give this to some people, they will give you products and/or services in exchange.
+            </bhn:data>
+          </p>
+        </div>
+        <div class="columns small-12 space-below-2">
+          <h6 class="subheader">Terms and Conditions</h6>
+          <p>
+            <bhn:data name="product.termsAndConditions">
+              Aliquam vitae tellus scelerisque, rhoncus ante a, finibus odio. Praesent vitae purus eu enim hendrerit ultrices. Aenean dignissim massa eget velit interdum, nec tristique nulla vehicula. Curabitur consequat blandit luctus. Donec non diam luctus, laoreet enim vitae, pretium mauris.
+            </bhn:data>
+          </p>
+        </div>
+      </div>
+		</div>
+    <script type="text/javascript" src="scripts/util.js"></script>
+		<script type="text/javascript" src="scripts/custom.js"></script>
+	</body>
+</html>
